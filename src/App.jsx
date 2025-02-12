@@ -11,7 +11,19 @@ function App() {
   let [star4, setStar4] = useState(false)
   let [star5, setStar5] = useState(false)
 
-  
+  function handleClick(e){
+    console.log(e.dataset);
+    console.log(e);
+    
+    setStar1((prev)=>{
+        console.log(prev);
+        
+        return star1=!prev
+        
+    })
+    console.log(star1);
+    
+  }
   
   
   return (
