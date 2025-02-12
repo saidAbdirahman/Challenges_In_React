@@ -25,6 +25,28 @@ function App() {
     
   }
   
+  const p = ()=> {
+    if(star1 && star2 && star3 && star4 && star5){
+      return <p> Excellent We're thrilled to hear you had such a postive experience <br/>
+      Thank you for choosing our platform</p>
+    }else if(star1 && star2 && star3 && star4){
+        return <p>Thank you for you postive feedback! We've glad to know that you had<br/> a great experience
+     and we appreciate you support</p>
+          
+    }else if(star1 && star2 && star3  ){
+        return  <p>Thank you for you feedback. We're sorry to hear that your experience<br/> wasn't perfect. We should love to hear more about your concern to see <br/>
+        how we can improve
+     </p>
+    } else if(star1 && star2){
+        return <p> We apologise for the inconvenience you experienced. We appreciate<br/> you feedback
+            and would like to work with you to address any issue</p>
+    } else if(star1){
+        return <p>we sorry to here that you had a bad experience. We should
+        like <br/> to learn more about what happend and how we can make things right</p>
+    }
+    
+
+  }
   
   return (
 
